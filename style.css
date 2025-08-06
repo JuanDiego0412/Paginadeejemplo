@@ -1,80 +1,68 @@
 /* Cuerpo de la página */
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
-/* Encabezado */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
 header {
-  background-color: #007bff;
-  color: white;
-  padding: 20px;
+  background: linear-gradient(to right, #317d50, #1b6e3c);
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
 }
 
-/* Secciones generales */
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Títulos */
-h2 {
-  color: #007bff;
+header h1 {
   margin-bottom: 10px;
+  font-size: 2.5em;
 }
 
-/* Listas */
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+header nav ul {
+  list-style: none;
+  margin-top: 15px;
 }
 
-/* Proyectos */
-#proyectos div {
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: #f1f1f1;
-  border-radius: 10px;
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
-/* Enlaces */
-a {
-  color: #007bff;
+header nav ul li a {
+  color: #fff;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+header nav ul li a:hover {
+  color: #ffd700;
 }
 
-/* Pie de página */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #317d50;
+}
+
 footer {
   background-color: #333;
-  color: white;
-  padding: 10px;
+  color: #fff;
   text-align: center;
-}
-
-/* ✅ Media queries: ajustes para pantallas pequeñas */
-@media screen and (max-width: 600px) {
-  header, section, footer {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  body {
-    text-align: left;
-  }
+  padding: 20px;
+  margin-top: 40px;
 }
